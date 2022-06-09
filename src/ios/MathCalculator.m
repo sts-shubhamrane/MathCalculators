@@ -19,9 +19,9 @@
     NSString *param1 = [[command.arguments objectAtIndex:0] valueForKey:@"param1"];
     NSString *param2 = [[command.arguments objectAtIndex:0] valueForKey:@"param2"];
 
-    if(param1 >= 0 && param2 >=0){
+    if(param1 >= 0 && param2 >= 0){
 
-        NSString *total = @(param1+param2);
+        NSString *total = @(param1 + param2);
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:total];
 
 
@@ -40,9 +40,9 @@
     NSString *param1 = [[command.arguments objectAtIndex:0] valueForKey:@"param1"];
     NSString *param2 = [[command.arguments objectAtIndex:0] valueForKey:@"param2"];
 
-    if(param1 >= 0 && param2 >=0){
+    if(param1 >= 0 && param2 >= 0){
 
-        NSString *total = @(param1-param2);
+        NSString *total = @(param1 - param2);
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:total];
 
 
